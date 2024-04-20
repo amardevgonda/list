@@ -1,14 +1,13 @@
-/* new-person-form.component.css */
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Adjust as needed */
+    height: 100vh; 
   }
   
   .form-container {
-    width: 400px; /* Adjust as needed */
+    width: 400px; 
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;

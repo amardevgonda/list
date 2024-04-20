@@ -3,19 +3,14 @@
 
 <h3 style="text-align: center;"> List of Persons</h3>
 
-<!-- <input type="text" class="form-control mb-3" placeholder="Search by name" [(ngModel)]="searchText"> -->
-<input type="text" class="form-control mb-3 search-bar" placeholder="Search by name" [(ngModel)]="searchText">
-
+<input type="text" class="form-control mb-3 search-bar" 
+placeholder="Search by name" [(ngModel)]="searchText">
 
 <div *ngFor="let person of persons | personFilter: searchText">
   <app-card-view [person]="person"></app-card-view>
 </div>
 
 
-<!-- <div *ngFor="let person of persons">
-    <app-card-view [person]="person"></app-card-view>
-  
-  </div> -->
   
 
 

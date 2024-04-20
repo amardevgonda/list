@@ -10,7 +10,7 @@ import { Person } from '../person.interface';
 export class NewPersonFormComponent {
   @Output() addPerson = new EventEmitter<Person>();
   personForm: FormGroup;
-  avatarPreview: string | ArrayBuffer | null = null; // Add this line to declare avatarPreview variable
+  avatarPreview: string | ArrayBuffer | null = null; 
 
   constructor(private fb: FormBuilder) {
     this.personForm = this.fb.group({
@@ -30,7 +30,7 @@ export class NewPersonFormComponent {
       console.log(this.addPerson);
       
       this.personForm.reset();
-      this.avatarPreview = null; // Reset avatar preview after form submission
+      this.avatarPreview = null; 
     }
   }
 
