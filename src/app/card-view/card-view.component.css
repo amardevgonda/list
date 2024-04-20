@@ -1,0 +1,16 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh; 
+  }
+  
+  .card {
+    margin: 10px; 
+    padding: 20px; 
+  }
+  
+
+  .custom-dialog-container {
+    transform: translate(-50%, -50%);
+  }

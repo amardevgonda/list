@@ -1,0 +1,74 @@
+<!-- 
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">Edit Person</h5>
+    <button type="button" class="close" aria-label="Close" (click)="cancel()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form (ngSubmit)="saveChanges()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="editedPerson.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" [(ngModel)]="editedPerson.email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" class="form-control" id="dob" [(ngModel)]="editedPerson.dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="avatar">Avatar</label>
+        <input type="text" class="form-control" id="avatar" [(ngModel)]="editedPerson.avatar" name="avatar">
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text" class="form-control" id="country" [(ngModel)]="editedPerson.country" name="country">
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+      <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+    </form>
+  </div>
+</div> -->
+
+
+<!-- edit-person.component.html -->
+
+<div class="modal-content">
+  <div class="modal-header">
+    <h5 class="modal-title">Edit Person</h5>
+    <button type="button" class="close" aria-label="Close" (click)="cancel()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form (ngSubmit)="saveChanges()">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="editedPerson.name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" [(ngModel)]="editedPerson.email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" class="form-control" id="dob" [(ngModel)]="editedPerson.dob" name="dob" required>
+      </div>
+      <div class="form-group">
+        <label for="avatar">Avatar</label>
+        <input type="file" (change)="onFileSelected($event)" accept="image/*">
+        <img [src]="avatarPreview" *ngIf="avatarPreview" style="max-width: 100px;">
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text" class="form-control" id="country" [(ngModel)]="editedPerson.country" name="country">
+      </div>
+      <button type="submit" class="btn btn-primary">Save</button>
+      <button type="button" class="btn btn-secondary" (click)="cancel()">Cancel</button>
+    </form>
+  </div>
+</div>

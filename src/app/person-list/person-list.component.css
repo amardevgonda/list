@@ -1,0 +1,8 @@
+/* person-list.component.css */
+
+.search-bar {
+    width: 200px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    margin: 0 auto; /* Center the search bar horizontally */
+  }
+  
